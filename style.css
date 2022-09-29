@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Sans+Pro:wght@200&display=swap');
+* {
+    margin: 0;
+    
+}
+html{
+    width: 1440px;
+}
+body {
+    background: hsl(212, 45%, 89%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    
+}
+
+
+.bloque {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: hsl(0, 0%, 100%);
+    width: 27rem;
+    height: 40rem;
+    border-radius: 25px;
+}
+
+
+
+.img, img {
+    margin-top: 0.9rem;
+    width: 24rem;
+    height: 24rem;
+    border-radius: 15px;
+    
+}
+
+.text {
+    width: 20rem;
+}
+
+h2 {
+    font:  1.7rem  'Outfit', sans-serif;
+    padding-top: 2.5rem;
+    width: 20rem;
+    font-weight: 700;
+    text-align: center;
+
+}
+p {
+    padding-top: 1.2rem;
+    padding-left: 1rem;
+    width: 18rem;
+    font:  1.1rem 'Outfit', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color: hsl(210, 2%, 64%);
+}
+
+
+@media (max-width: 375px) {
+    html{
+        width: 375px;
+    }
+    body {
+        display:flex ;
+
+
+
+    }
+    .bloque{
+        width: 85vw;
+        height: 80vh;
+        
+    }
+    .img, img {
+        margin-top: 0.5rem;
+        width: 70vw;
+        height: 40vh;
+        border-radius: 15px;
+        
+    }
+    h2 {
+        font:  1.5rem  'Outfit', sans-serif;
+        padding-top: 2.5rem;
+        padding-left: 1.5rem;
+        width: 17rem;
+        font-weight: 700;
+        text-align: center;
+    
+    }
+    p {
+        padding-top: 1.2rem;
+        padding-left: 1rem;
+        width: 18rem;
+        font:  1rem 'Outfit', sans-serif;
+        font-weight: 400;
+        text-align: center;
+        color: hsl(210, 2%, 64%);
+    }
+}
