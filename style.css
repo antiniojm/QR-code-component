@@ -3,101 +3,75 @@
     margin: 0;
     
 }
-html{
-    width: 1440px;
-}
 body {
-    background: hsl(212, 45%, 89%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
     min-height: 100vh;
-    min-width: 100vw;
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(212, 45%, 89%);
+    font-family: 'Outfit' , sans-serif;
 }
 
-
-.bloque {
+.block-qr {
+    margin: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: hsl(0, 0%, 100%);
-    width: 27rem;
+    background-color: hsl(0, 0%, 100%);
+    width: 25rem;
     height: 40rem;
-    border-radius: 25px;
+    border-radius: 2rem;
+    
+
 }
 
-
-
-.img, img {
-    margin-top: 0.9rem;
-    width: 24rem;
-    height: 24rem;
-    border-radius: 15px;
+img{
+    width: 90%;
+    padding: 1.5rem;
+    border-radius: 2.5rem;   
     
 }
 
-.text {
-    width: 20rem;
-}
-
-h2 {
-    font:  1.7rem  'Outfit', sans-serif;
-    padding-top: 2.5rem;
-    width: 20rem;
-    font-weight: 700;
+h1{
+    font-size: 1.7rem;
+    width: 80%;
+    padding: 1rem;
+    color: hsl(218, 44%, 22%);
     text-align: center;
-
+    
 }
-p {
-    padding-top: 1.2rem;
-    padding-left: 1rem;
-    width: 18rem;
-    font:  1.1rem 'Outfit', sans-serif;
+
+p{
+    font-size: 1.2rem;
     font-weight: 400;
+    width:80%;
     text-align: center;
-    color: hsl(210, 2%, 64%);
+    color: hsl(220, 15%, 55%);
 }
 
 
-@media (max-width: 375px) {
-    html{
-        width: 375px;
-    }
-    body {
-        display:flex ;
 
-
-
-    }
-    .bloque{
-        width: 85vw;
-        height: 80vh;
-        
-    }
-    .img, img {
-        margin-top: 0.5rem;
-        width: 70vw;
-        height: 40vh;
-        border-radius: 15px;
-        
-    }
-    h2 {
-        font:  1.5rem  'Outfit', sans-serif;
-        padding-top: 2.5rem;
-        padding-left: 1.5rem;
-        width: 17rem;
-        font-weight: 700;
-        text-align: center;
+@media (max-width:765px){
     
+    h1{   
+        font-size: 1.rem;
+
     }
-    p {
-        padding-top: 1.2rem;
-        padding-left: 1rem;
-        width: 18rem;
-        font:  1rem 'Outfit', sans-serif;
-        font-weight: 400;
-        text-align: center;
-        color: hsl(210, 2%, 64%);
+    p{
+        
+        font-size: 1.2rem;
+    }
+}
+@media (max-width:375px){
+    .block-qr{
+        height: 50%;
+    }
+    h1{
+        font-size: 1.4rem;
+
+    }
+    p{
+        font-size: 1rem;
+        padding-bottom: 2.5rem;
     }
 }
